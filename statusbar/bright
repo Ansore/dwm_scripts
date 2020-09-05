@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# Prints the current screen bright
+
+case $BLOCK_BUTTON in
+	1) notify-send "🔆 screen bright";;
+	3) notify-send "🔆 screen bright";;
+	6) "$TERMINAL" -e "$EDITOR" "$0" ;;
+esac
+
+icon="🔆"
+bright="$(xbacklight -get)"
+
+echo "$icon$bright%"

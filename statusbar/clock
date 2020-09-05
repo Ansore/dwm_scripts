@@ -29,5 +29,5 @@ esac
 # date +"🗓:%Y-%m-%d(%a),{icon:%H:%M
 # date "+%Y %b %d (%a) $icon%I:%M%p"
 
-LOCALTIME=$(date +"🗓%Y-%m-%d(%a) ${icon}%H:%M")
+LOCALTIME=$(date +"📅%Y-%m-%d(%a) ${icon}%H:%M")
 printf "${LOCALTIME}"
